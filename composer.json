@@ -1,0 +1,15 @@
+{
+    "name": "yavV/testSuit",
+    "authors": [],
+    "require": {
+        "mediaopt/behat-runner": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:yavV/testSuit.git"
+        }
+    ]
+}
