@@ -2,14 +2,16 @@
     "name": "yavV/testSuit",
     "authors": [],
     "require": {
-        "mediaopt/behat-runner": "^1.0"
+        "yavV/behat-runner": "^1.1"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:yavV/testSuit.git"
+            "type": "github",
+            "url": "git@github.com:yavV/testSuit.git",
+            "url": "git@github.com:yavV/behat-runner.git"php
+            "no-api": true
         }
     ]
 }

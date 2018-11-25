@@ -16,11 +16,6 @@ class HomePageContext extends BaseContext
     private $menuElements;
 
     /**
-     * @var RemoteWebElement
-     */
-    private $menu;
-
-    /**
      * @var string
      */
     private $mainPageTitle;
@@ -64,7 +59,7 @@ class HomePageContext extends BaseContext
     public function iClickTheMenuEntry($menuEntry)
     {
         $this->mainPageTitle = $this->getWebDriver()->getTitle();
-        $xPath = "//div[@id='mainnavigation']/div[@class='container']/ul[@class='nav nav-pills unstyled']/li";
+        $xPath = "//*[@id=\"top_menu\"]/a";
         $menuElements = $this->getWebDriver()->findElements(WebDriverBy::xpath($xPath));
         $this->iClickElement($menuElements[$menuEntry - 1]);
     }
@@ -75,7 +70,7 @@ class HomePageContext extends BaseContext
      */
     public function iCanMoveMouseOverTheMenuEntry($menuEntry)
     {
-        $xPath = "//div[@id='mainnavigation']/div[@class='container']/ul[@class='nav nav-pills unstyled']/li";
+        $xPath = "/*[@id=\"top_menu\"]/a";
         $this->menuElements = $this->getWebDriver()->findElements(WebDriverBy::xpath($xPath));
         $this->moveMouseOverElement($this->menuElements[$menuEntry - 1]);
     }
@@ -94,7 +89,7 @@ class HomePageContext extends BaseContext
      */
     public function iSeeTheMainPage()
     {
-        $this->getWebDriver()->findElement(WebDriverBy::xpath("//body[@id='startbody']"));
+        $this->getWebDriver()->findElement(WebDriverBy::xpath("//a[@class='logo']"));
     }
 
     /**

@@ -11,14 +11,32 @@ use YavV\BehatRunner\BasicBehatContext;
  */
 class BaseContext extends BasicBehatContext
 {
+
+    /**
+     * xPath to top menu
+     * @var string
+     */
+    private $xPathTopMenu= '/*[@id="top_menu"]';
+
+    /**
+     * xPath to top menu
+     * @var string
+     */
+    private $xPathTopMenuElements= '/*[@id="top_menu"]/a';
+
+    /**
+     * @var RemoteWebElement
+     */
+    private $menu;
+
     /**
      * @When I can see the menu
      * @throws ElementNotVisibleException
      */
     public function iCanSeeTheMenu()
     {
-        $xPath = "//div[@id='mainnavigation']/div[@class='container']/ul[@class='nav nav-pills unstyled']";
-        $this->menu = $this->getWebDriver()->findElement(WebDriverBy::xpath($xPath));
+        $xPath = "//*[@id=\"top_menu\"]";
+        $this->menu = $this->getWebDriver()->findElement(WebDriverBy::xpath($this->xPathTopMenu));
         if (!$this->menu->isDisplayed()) {
             throw new ElementNotVisibleException('Menu not visible.');
         }

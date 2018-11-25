@@ -1,57 +1,57 @@
 default:
     suites:
         home_page:
-          paths:    [ %paths.base%/features ]
+          paths:    [ "%paths.base%/features" ]
           contexts: [ HomePageContext ]
           filters:
             tags: "@homePage"
         menu:
-          paths:    [ %paths.base%/features ]
+          paths:    [ "%paths.base%/features" ]
           contexts: [ HomePageContext ]
           filters:
             tags: "@menu"
-        logo:
-          paths:    [ %paths.base%/features ]
-          contexts: [ HomePageContext ]
-          filters:
-            tags: "@logo"
-        images:
-          paths:    [ %paths.base%/features ]
-          contexts: [ HomePageContext ]
-          filters:
-            tags: "@images"
-        filials:
-          paths:    [ %paths.base%/features ]
-          contexts: [ FilialsContext ]
-          filters:
-            tags: "@filials"
-        search:
-          paths:    [ %paths.base%/features ]
-          contexts: [ SearchContext ]
-          filters:
-            tags: "@search"
-        footer:
-          paths:    [ %paths.base%/features ]
-          contexts: [ FooterContext ]
-          filters:
-            tags: "@footer"
-        mainCategories:
-          paths:    [ %paths.base%/features ]
-          contexts: [ CategoriesContext ]
-          filters:
-            tags: "@mainCategories"
-        categoriesItems:
-          paths:    [ %paths.base%/features ]
-          contexts: [ CategoriesContext ]
-          filters:
-            tags: "@categoriesItems"
-        subcategories:
-          paths:    [ %paths.base%/features ]
-          contexts: [ CategoriesContext ]
-          filters:
-            tags: "@subcategories"
-        categoriesFilters:
-                  paths:    [ %paths.base%/features ]
-                  contexts: [ CategoriesContext ]
-                  filters:
-                    tags: "@categoriesFilters"
+#        logo:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ HomePageContext ]
+#          filters:
+#            tags: "@logo"
+#        images:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ HomePageContext ]
+#          filters:
+#            tags: "@images"
+#        filials:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ FilialsContext ]
+#          filters:
+#            tags: "@filials"
+#        search:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ SearchContext ]
+#          filters:
+#            tags: "@search"
+#        footer:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ FooterContext ]
+#          filters:
+#            tags: "@footer"
+#        mainCategories:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ CategoriesContext ]
+#          filters:
+#            tags: "@mainCategories"
+#        categoriesItems:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ CategoriesContext ]
+#          filters:
+#            tags: "@categoriesItems"
+#        subcategories:
+#          paths:    [ "%paths.base%/features" ]
+#          contexts: [ CategoriesContext ]
+#          filters:
+#            tags: "@subcategories"
+#        categoriesFilters:
+#                  paths:    [ "%paths.base%/features" ]
+#                  contexts: [ CategoriesContext ]
+#                  filters:
+#                    tags: "@categoriesFilters"
